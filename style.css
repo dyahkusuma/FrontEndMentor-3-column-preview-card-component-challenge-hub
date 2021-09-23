@@ -1,0 +1,94 @@
+
+.body{
+    margin: 0;
+}
+
+.container{
+    background-color: hsl(0, 0%, 95%);
+    padding:10%;
+    height: 400px;
+}
+
+.sedans, .suvs, .lux{
+    width: 33.33%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: hsla(0, 0%, 100%, 0.75);
+    float: left;
+    height: 400px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.lux{ 
+    background-color: hsl(179, 100%, 13%);
+}
+
+.text{
+    height: 300px;
+}
+
+p{
+    height: 150px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.lux button, .sedans button, .suvs button{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+
+.lux button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    transition-duration: 0.4s;
+    border: 2px solid hsla(0, 0%, 100%, 0.75)
+    
+}
+
+.sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs button:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.lux button:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* RESPONSIF DIBAWAH 600 */
+
+@media screen and (max-width: 750px) {
+    .sedans, .suvs, .lux {
+      width: 100%;
+      padding: 10%;
+    }
+  }
